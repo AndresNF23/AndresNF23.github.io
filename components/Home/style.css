@@ -1,0 +1,322 @@
+html {
+    background-color: whitesmoke;
+    font-family: Helvetica;
+    font-size: 10pt;
+}
+
+body {
+    margin: 0;
+}
+
+h4,
+p {
+    margin: 20px 0;
+}
+
+img,
+h4,
+.username,
+.usernameStory,
+.Comment,
+.A,
+.user,
+.switch,
+.SeeAll,
+p t {
+    cursor: pointer;
+}
+
+/* Nav */
+
+.headerArticle {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(220, 220, 220);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 1;
+}
+
+.menuContainer{
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+}
+
+.instagramLogo {
+    height: 60px;
+}
+
+.searchInput {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 233, 233);
+    height: 4.5vh;
+    width: 20vw;
+    color: gray;
+    box-sizing: border-box;
+    padding: 1vw;
+}
+
+.iconList {
+    width: 15vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerIcon {
+    height: 25px;
+}
+
+#userPicture {
+    border-radius: 50%;
+}
+
+/* Content including posts */
+
+.contentSection {
+    display: flex;
+    margin: 300px;
+    margin-top: 100px;
+    padding: 0;
+}
+
+/* Stories */
+
+.storiesContainer {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+stories-container {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: none;
+}
+
+stories-container::-webkit-scrollbar {
+    width: 0px;
+    height: 15px;
+}
+
+stories-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+stories-container::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+stories-container::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+stories-container::-webkit-scrollbar-button:single-button {
+    background-color: rgb(219, 218, 218);
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.storySection {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+.profilePicture {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 3px auto 5px auto;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #a028eb 90%) border-box;
+    border-radius: 50%;
+    border: 4px solid transparent;
+}
+
+.usernameStory {
+    margin: auto;
+    color: gray;
+}
+.username {
+    margin: auto;
+    color: gray;
+}
+
+/* Posts */
+
+.profileSection {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    padding-left:20px;
+    padding-top: 20px;
+    width: 30vw;
+    height:820px;
+    margin: 5% auto;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+#headerArticle {
+    display: flex;
+}
+
+.profilePictureProfile {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.location {
+    opacity: 0.8;
+    font-size: 10pt;
+    width: 20vh;
+}
+
+.iconProfile {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin-left: 12vw;
+}
+
+.profilePost {
+    margin: 15px 0 15px -1.1vw;
+    width: 30vw;
+    height: 26vw;
+}
+
+.icon1 {
+    margin-bottom: 4%;
+    height: 22px;
+}
+
+.icon1:hover {
+    opacity: 0.5;
+    height: 15.5px;
+}
+
+.icon2 {
+    height: 8px;
+    margin: 1vh 3vh 0 0;
+}
+
+#displayCounter {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.subtitle t {
+    color: dodgerblue;
+}
+
+.comment {
+    opacity: 0.5;
+    font-size: 9pt;
+}
+
+.date {
+    opacity: 0.5;
+    font-size: 8pt;
+}
+
+#heart {
+    position: relative;
+    bottom: 8.6vh;
+    width:5%
+}
+
+#iconContainer {
+    position: relative;
+    left: 1.8vw;
+}
+
+#subtitleArticle {
+    position: relative;
+    bottom: 5vh;
+}
+
+/* Side */
+
+.sideNav {
+    margin: 0 2vw;
+}
+
+.profileImg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.titleProfile {
+    font-weight: bold;
+    margin-left: 1vw;
+}
+
+.subtitleProfile {
+    color: gray;
+    margin-left: 1vw;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 6vh 0;
+}
+
+.switchText {
+    color: dodgerblue;
+    margin-left: 3.5vw;
+}
+
+.suggestionsContainer {
+    display: flex;
+}
+
+.suggestTitle {
+    color: darkgray;
+    font-weight: bold;
+}
+
+.seeallTitle {
+    margin-left: 5vw;
+}
+
+.recommendedSection {
+    margin: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+.subtitle2 {
+    color: gray;
+}
+
+.followButton t {
+    color: dodgerblue;
+    margin: 3vw;
+}
+
+.aboutText {
+    color: rgb(190, 190, 190);
+    margin-top: 3vh;
+    width: 16vw;
+    font-size: 9pt;
+}
